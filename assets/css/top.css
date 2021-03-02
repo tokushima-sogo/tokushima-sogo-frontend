@@ -1,0 +1,411 @@
+@charset "utf-8";
+
+/* l */
+.l-main {
+    padding-top: 70px;
+}
+@media (min-width:768px) {
+    .l-main {
+        padding-top: 100px;
+    }
+}
+
+.l-department {
+    position: relative;
+}
+
+
+/* project */
+.p-departmentFloor {
+    position: relative;
+}
+
+/* エレベーターがあるエリア */
+.p-elevatorArea {
+    width: 100%;
+    background-image: url("C:/Users/sazzu/Desktop/tokushima-sogo/assets/images/mv_front_tabletNEW.jpg");
+    background-repeat: no-repeat;
+	background-position: center top;
+}
+
+/* フロア */
+.p-floorBlock {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* リンクエリア */
+.p-floorLink {
+    width: 100%;
+    padding: 5px 0;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width:768px) {
+    .p-floorLink {
+        padding: 15px 0;
+        height: 330px;
+    }
+}
+.p-floorLink:hover {
+    filter: brightness(50%);
+}
+
+/* タブレット以上の画像表示用 */
+.p-floorImg {
+    position: relative;
+    height: 100%;
+}
+@media (min-width:768px) {
+    .p-floorImg {
+        width: 550px;
+        height: 100%;
+    }
+}
+
+/* ご案内 */
+.p-guideArea {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    background: rgba(226, 224, 239, 0.6);
+    border-radius: 20px;
+    border: 1px solid #707070;
+    text-align: center;
+}
+@media (min-width:400px) {
+    .p-guideArea {
+        width: 80%;
+    }
+}
+
+/* 徳島リンク */
+.p-tokushimaLink {
+    width: 100%;
+    padding: 5px 0;
+}
+
+/* トップへどうぞ */
+.p-topIcon {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 0;
+    text-align: center;
+}
+@media (min-width:768px) {
+    .p-topIcon {
+        padding: 10px 0;
+    }
+}
+
+/* 新着情報エリア */
+.p-newsArea {
+    height: 70px;
+    background: #f0f0f0;
+}
+@media (min-width:768px) {
+    .p-newsArea {
+        height: 100px;
+    }
+}
+
+/* c */
+/* 観覧車 */
+.c-ferrisWheelGif {
+    position: absolute;
+    width: 100px;
+    top: 12%;
+    left: 35%;
+    transform: translate(-50%,0);
+}
+@media (min-width:768px) {
+    .c-ferrisWheelGif {
+        width: 200px;
+    }
+}
+
+/* バルーン */
+.c-baloonGif {
+    position: absolute;
+    width: 150px;
+    top: -20%;
+    right: -10%;
+}
+@media (min-width:768px) {
+    .c-baloonGif {
+        width: 500px;
+    }
+}
+
+/* pタグ */
+.c-floor__text {
+    padding: 5px 0;
+    font-size: 12px;
+    line-height: 1.5;
+}
+@media (min-width:768px) {
+    .c-floor__text {
+        padding: 10px 0;
+        font-size: 22px;
+    }
+}
+
+/* キャッチコピー */
+.c-catchCopy {
+    width: 156px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@media (min-width:1025px) {
+    .c-catchCopy {
+    width: 424px;
+}
+}
+
+
+/* フロア名 */
+.c-floorName {
+    padding: 15px 0 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+@media (min-width:768px) {
+    .c-floorName {
+        font-size: 24px;
+    }
+}
+@media (min-width:1025px) {
+    .c-floorName {
+        padding: 30px 0 20px;
+        font-size: 34px;
+    }
+}
+
+
+/* 階数 */
+.c-floorNumber {
+    padding-right: 15px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+@media (min-width:768px) {
+    .c-floorNumber {
+        padding-right: 25px;
+        font-size: 28px;
+    }
+}
+@media (min-width:768px) {
+    .c-floorNumber {
+        padding-right: 35px;
+        font-size: 38px;
+    }
+}
+
+
+/* スポット画像 */
+.c-floorSpot {
+    width: 90px;
+    height: 60px;
+}
+@media (min-width:768px) {
+    .c-floorSpot {
+        width: 360px;
+        height: 240px;
+    }
+}
+
+/* マップ画像 */
+.c-floorMap {
+    width: 50px;
+    height: 50px;
+}
+@media (min-width:768px) {
+    .c-floorMap {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* ご案内タイトル */
+.c-guideTitle {
+    margin: 0 auto;
+    padding: 10px 0;
+    font-size: 14px;
+}
+@media (min-width:768px) {
+    .c-guideTitle {
+        padding: 20px 0;
+        font-size: 26px;
+    }
+}
+
+/* 徳島についてなどのリンク */
+.c-tokushimaLink a {
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+}
+@media (min-width:768px) {
+    .c-tokushimaLink a {
+        padding: 15px 0;
+        font-size: 24px;
+    }
+}
+
+/* 上へどうぞ */
+.c-topIcon {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 1px solid #2d294f;
+    background: #e2e0ef;
+}
+.c-topIcon i {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 28px;
+    color: #2d294f;
+}
+@media (min-width:768px) {
+    .c-topIcon {
+        width: 60px;
+        height: 60px;
+}
+    .c-topIcon i {
+        font-size: 58px;
+}
+}
+
+/* 都市伝説のバナー */
+.c-horrorBanner {
+    width: 100%;
+    height: 100%;
+}
+
+/* u */
+/* 表示非表示 */
+.u-mb {
+    display: block;
+}
+@media (min-width:768px) {
+    .u-mb {
+        display: none;
+    }
+}
+
+.u-web {
+    display: none;
+}
+@media (min-width:768px) {
+    .u-web {
+        display: block;
+    }
+}
+
+/* flex */
+.u-flex {
+    display: flex;
+}
+
+/* margin */
+.u-mb10 {
+    margin-bottom: 10px;
+}
+
+.u-ml20 {
+    margin-left: 20px;
+}
+
+/* height */
+.u-hS {
+    height: 220px;
+}
+@media (min-width:768px) {
+    .u-hS {
+        height: 430px;
+    }
+}
+.u-hL {
+    height: 550px;
+}
+@media (min-width:768px) {
+    .u-hL {
+        height: 1100px;
+    }
+}
+
+/* スポット画像2枚目 */
+.u-floorSpot--pc {
+    display: none;
+}
+@media (min-width:768px) {
+    .u-floorSpot--pc {
+        display: block;
+        position: absolute;
+        width: 240px;
+        height: 160px;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+
+/* 6F */
+.u-6f {
+    height: 380px;
+    padding-top: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 6FだけPCサイズで真ん中 */
+@media (min-width:768px) {
+    .u-6f h3 {
+        text-align: center;
+    }
+}
+
+/* 5F */
+.u-5f {
+    color: #2d294f;
+}
+
+/* 4f */
+.u-4f {
+    color: #2d294f;
+}
+
+/* 3F */
+.u-3f {
+    color: #2d294f;
+}
+
+/* 2F */
+.u-2f {
+    color: #2d294f;
+}
+
+
+/* 1F */
+.u-1f {
+    color: #2d294f;
+}
+
+/* B1 */
+.u-b1 {
+    height: 200px;
+}
+@media (min-width:768px) {
+    .u-b1 {
+        height: 350px;
+    }
+}
