@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* header */
+.l-header {
+  height: 100px;
+  background-color: navy;
+}
+
+/* mainのカラー */
+.p-conceptBase__main {
+  padding: 85px 0 160px 0;
+  background-color: #eae4ad;
+}
+
+/* sectionの指定 */
+#conceptBase {
+  background-color: #e2e0ef;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+/* h2の指定 */
+.p-conceptBase__heading {
+  height: 90px;
+}
+
+.p-conceptBase__heading__title {
+  /* color: white; */
+  font-weight: 200;
+  font-size: 35px;
+  line-height: 85px;
+  text-align: center;
+}
+
+/* tableの指定 */
+#conceptBase__inner {
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+.p-conceptBase__formTable {
+  width: 100%;
+}
+.c-conceptBase__formTable__item {
+  border: 1px solid #707070;
+}
+.u-conceptBase__formTable__line {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.u-conceptBase__formTable__line tr td {
+  background-color: white;
+}
+
+.c-conceptBase__formTable__item tr td {
+  width: 70%;
+}
+
+.c-conceptBase__formTable__item th {
+  display: table-cell;
+  vertical-align: middle;
+  background-color: #997653;
+  background: rgba(153, 118, 83, 0.2);
+  font-weight: 100;
+  border: 1px solid #707070;
+  padding: 10px 20px;
+  /* width: 40%; */
+  color: #2d294f;
+}
+
+.c-conceptBase__formTable__item__textarea {
+  border: 2px solid #707070;
+}
+.c-conceptBase__formTable__item__textarea td textarea {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.c-conceptBase__formTable__item input,
+select {
+  width: 100%;
+  vertical-align: middle;
+  padding: 10px;
+  border: 1px solid #707070;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.c-contactSec__formTable__item__formButtons {
+  text-align: center;
+}
+
+.c-contactSec__formTable__item__formButtons input {
+  font-size: 20px;
+  text-align: center;
+  width: 250px;
+  height: 60px;
+  margin: 30px 0 30px 0;
+  color: white;
+}
+
+/* footer */
+footer.l-footer {
+  height: 520px;
+  background-color: #2d294f;
+}
+
+/* 色指定 */
+.u-bgIndigo {
+  background-color: #2d294f;
+}
+.u-white {
+  color: white;
+}
+
+.u-bgWhite {
+  background-color: white;
+}
+/* abouttokusima */
+.c-aboutBox__abt__font.u-m40 {
+  text-align: center;
+}

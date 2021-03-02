@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* プライバシーポリシーの文字詳細指定 */
+.u-privacy__formTable__item th {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.u-privacy__formTable__item td {
+  font-size: 18px;
+  padding: 10px;
+}
