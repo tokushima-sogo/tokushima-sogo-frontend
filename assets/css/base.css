@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "mamelon3.5";
+  src: url("../assets/fonts/mamelon-fonts3.5.woff") format("woff");
+}
+@font-face {
+  font-family: "mamelon5";
+  src: url("../assets/fonts/mamelon-fonts5.woff") format("woff");
+}
+
+/* 画像の下の余白を削除 */
+img {
+    vertical-align: bottom;
+}
+
+/* リンク設定 */
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #2d294f;
+}
+a:hover {
+  color: #cf7e7c;
+}
+
+body {
+  /* サイト全体のコンテンツ領域指定 */
+    width: 100vw;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #eae4ad;
+  /* フォント指定 */
+    font-family: "mamelon3.5";
+    font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  /* 768px以上に適用されるCSS（タブレット・PC用） */
+    body {
+    /* フォント指定 */
+    font-family: "mamelon3.5";
+    font-size: 24px;
+}
+}
