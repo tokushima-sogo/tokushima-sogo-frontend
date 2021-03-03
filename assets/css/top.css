@@ -23,10 +23,11 @@
 /* エレベーターがあるエリア */
 .p-elevatorArea {
     width: 100%;
-    background-image: url("C:/Users/sazzu/Desktop/tokushima-sogo/assets/images/mv_front_tabletNEW.jpg");
+    background-image: url("../images/mv_front_tabletNEW.jpg");
     background-repeat: no-repeat;
 	background-position: center top;
 }
+
 
 /* フロア */
 .p-floorBlock {
@@ -34,7 +35,7 @@
     width: 90%;
     height: 100%;
     margin: 0 auto;
-    padding: 0;
+    padding: 5px 0;
 }
 
 /* リンクエリア */
@@ -43,6 +44,7 @@
     padding: 5px 0;
     justify-content: center;
     align-items: center;
+    filter: brightness(50%);
 }
 @media (min-width:768px) {
     .p-floorLink {
@@ -51,7 +53,7 @@
     }
 }
 .p-floorLink:hover {
-    filter: brightness(50%);
+    filter: brightness(100%);
 }
 
 /* タブレット以上の画像表示用 */
@@ -113,11 +115,20 @@
 }
 
 /* c */
+/* 6Fのリンク */
+.c-specialLink {
+    filter: brightness(50%);
+}
+.c-specialLink:hover {
+    filter: brightness(100%);
+}
+
+
 /* 観覧車 */
 .c-ferrisWheelGif {
     position: absolute;
     width: 100px;
-    top: 12%;
+    top: 16%;
     left: 35%;
     transform: translate(-50%,0);
 }
@@ -130,17 +141,18 @@
 /* バルーン */
 .c-baloonGif {
     position: absolute;
-    width: 150px;
-    top: -20%;
-    right: -10%;
+    width: 120px;
+    top: 5%;
+    right: 3%;
+    z-index: 2;
 }
 @media (min-width:768px) {
     .c-baloonGif {
-        width: 500px;
+        width: 240px;
     }
 }
 
-/* pタグ */
+/* テキスト */
 .c-floor__text {
     padding: 5px 0;
     font-size: 12px;
@@ -166,11 +178,16 @@
 }
 }
 
-
 /* フロア名 */
 .c-floorName {
-    padding: 15px 0 10px;
-    font-size: 14px;
+    width: 50%;
+    padding: 8px;
+    background:#e2e0ef;
+    border-radius: 20px;
+    border: 1px solid #2d294f;
+    color: #2d294f;
+    font-size: 16px;
+    text-align: center;
     letter-spacing: 1px;
 }
 @media (min-width:768px) {
@@ -208,8 +225,8 @@
 
 /* スポット画像 */
 .c-floorSpot {
-    width: 90px;
-    height: 60px;
+    width: 180px;
+    height: 120px;
 }
 @media (min-width:768px) {
     .c-floorSpot {
@@ -287,6 +304,7 @@
 
 /* 都市伝説のバナー */
 .c-horrorBanner {
+    display: inline-block;
     width: 100%;
     height: 100%;
 }
@@ -301,7 +319,6 @@
         display: none;
     }
 }
-
 .u-web {
     display: none;
 }
@@ -344,11 +361,11 @@
 }
 
 /* スポット画像2枚目 */
-.u-floorSpot--pc {
+.u-floorSpot--web {
     display: none;
 }
 @media (min-width:768px) {
-    .u-floorSpot--pc {
+    .u-floorSpot--web {
         display: block;
         position: absolute;
         width: 240px;
@@ -371,41 +388,5 @@
 @media (min-width:768px) {
     .u-6f h3 {
         text-align: center;
-    }
-}
-
-/* 5F */
-.u-5f {
-    color: #2d294f;
-}
-
-/* 4f */
-.u-4f {
-    color: #2d294f;
-}
-
-/* 3F */
-.u-3f {
-    color: #2d294f;
-}
-
-/* 2F */
-.u-2f {
-    color: #2d294f;
-}
-
-
-/* 1F */
-.u-1f {
-    color: #2d294f;
-}
-
-/* B1 */
-.u-b1 {
-    height: 200px;
-}
-@media (min-width:768px) {
-    .u-b1 {
-        height: 350px;
     }
 }
