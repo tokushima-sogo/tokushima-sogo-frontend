@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/top.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="./assets/css/slick.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <body>
@@ -27,13 +26,11 @@
                         <img src="assets/images/img_front_catchCopy.png" class="c-catchCopy u-web" alt="＼定員無制限／エレベーターに乗って見つけよう！あ・わくわくする徳島">
                         <div class="p-floorBlock">
                             <h3 class="c-floorName"><span class="c-floorNumber">6階</span>特設会場</h3>
-                            <div class="p-floorLink u-flex">
-                                <div class="p-gameLink u-flex">
-                                    <a href="#"><img src="assets/images/img_front_ferrisWheel.gif" class="c-ferrisWheelGif" alt="クイズゲーム"></a>
-                                </div>
-                                <div class="c-specialLink">
-                                    <a href="#"><img src="assets/images/img_front_balloon.gif" class="c-baloonGif" alt="特集コーナー"></a>
-                                </div>
+                            <div class="c-specialLink">
+                                <a href="#"><img src="assets/images/img_front_ferrisWheel.gif" class="c-ferrisWheelGif" alt="クイズゲーム"></a>
+                            </div>
+                            <div class="c-specialLink">
+                                <a href="#"><img src="assets/images/img_front_balloon.gif" class="c-baloonGif" alt="特集コーナー"></a>
                             </div>
                         </div>
                     </section>
@@ -44,7 +41,7 @@
                             <div class="p-floorLink u-flex">
                                 <div class="p-floorImg">
                                     <img src="assets/images/img_front_east01.png" class="c-floorSpot" alt="里むすめ">
-                                    <img src="assets/images/img_front_east02.png" class="c-floorSpot u-floorSpot--pc" alt="上勝ビール">
+                                    <img src="assets/images/img_front_east02.png" class="c-floorSpot u-floorSpot--web" alt="上勝ビール">
                                 </div>
                                 <a href="#"><img src="assets/images/btn_front_mapEast.png" class="c-floorMap u-ml20" alt="県東部"></a>
                             </div>
@@ -57,7 +54,7 @@
                             <div class="p-floorLink u-flex">
                                 <div class="p-floorImg">
                                     <img src="assets/images/img_front_west01.png" class="c-floorSpot" alt="祖谷そば">
-                                    <img src="assets/images/img_front_west02.png" class="c-floorSpot u-floorSpot--pc" alt="オンツツジ">
+                                    <img src="assets/images/img_front_west02.png" class="c-floorSpot u-floorSpot--web" alt="オンツツジ">
                                 </div>
                                 <a href="#"><img src="assets/images/btn_front_mapWest.png" class="c-floorMap u-ml20" alt="県西部"></a>
                             </div>
@@ -70,7 +67,7 @@
                             <div class="p-floorLink u-flex">
                                 <div class="p-floorImg">
                                     <img src="assets/images/img_front_city01.png" class="c-floorSpot" alt="焼餅">
-                                    <img src="assets/images/img_front_city02.png" class="c-floorSpot u-floorSpot--pc" alt="シラサギ">
+                                    <img src="assets/images/img_front_city02.png" class="c-floorSpot u-floorSpot--web" alt="シラサギ">
                                 </div>
                                 <a href="#"><img src="assets/images/btn_front_mapCity.png" class="c-floorMap u-ml20" alt="徳島市"></a>
                             </div>
@@ -83,7 +80,7 @@
                             <div class="p-floorLink u-flex">
                                 <div class="p-floorImg">
                                     <img src="assets/images/img_front_south01.png" class="c-floorSpot" alt="ウミガメ">
-                                    <img src="assets/images/img_front_south02.png" class="c-floorSpot u-floorSpot--pc" alt="サーフィン">
+                                    <img src="assets/images/img_front_south02.png" class="c-floorSpot u-floorSpot--web" alt="サーフィン">
                                 </div>
                                 <a href="#"><img src="assets/images/btn_front_mapSouth.png" class="c-floorMap u-ml20" alt="県南部"></a>
                             </div>
@@ -92,7 +89,7 @@
                     <!-- 1F -->
                     <section class="p-departmentFloor u-1f u-hL">
                         <div class="p-floorBlock">
-                            <h3 class="c-floorName"><span class="c-floorNumber">1階</span>ご案内</h3>
+                            <h3 class="c-floorName u-mb10"><span class="c-floorNumber">1階</span>ご案内</h3>
                             <div class="p-guideArea">
                                 <h4 class="c-guideTitle">このサイトの使い方</h4>
                                 <p class="c-floor__text">
@@ -113,8 +110,9 @@
                 <!-- /elevatorArea -->
                 <!-- B1 -->
                 <section class="p-departmentFloor u-b1">
-                    <a href="#"><img src="assets/images/bn_front_horror_mobile.png" class="c-horrorBanner u-mb" alt="都市伝説">
-                        <img src="assets/images/bn_front_horror_web.png" class="c-horrorBanner u-web" alt="都市伝説"></a>
+                    <a href="#" class="c-horrorBanner"><img src="assets/images/bn_front_horror_mobile.png" class="u-mb" alt="都市伝説">
+                        <img src="assets/images/bn_front_horror_web.png" class="u-web" alt="都市伝説">
+                    </a>
                 </section>
             </div>
             <!-- /department -->
@@ -126,8 +124,8 @@
         </main>
         <footer class="l-footer">
         </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="assets/js/top.js"></script>
     </body>
 </body>
 </html>
+
