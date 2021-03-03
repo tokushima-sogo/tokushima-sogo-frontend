@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "mamelon3.5";
-  src: url("../assets/fonts/mamelon-fonts3.5.woff") format("woff");
+  src: url("../fonts/mamelon-fonts3.5.woff") format("woff");
 }
 @font-face {
   font-family: "mamelon5";
-  src: url("../assets/fonts/mamelon-fonts5.woff") format("woff");
+  src: url("../fonts/mamelon-fonts5.woff") format("woff");
 }
 
 /* 画像の下の余白を削除 */
@@ -43,3 +43,4 @@ body {
     font-size: 24px;
 }
 }
+
