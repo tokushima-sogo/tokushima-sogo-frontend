@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お問い合わせ</title>
+    <title>このサイトについて</title>
     <link href="assets/css/reset.css" media="all" rel="stylesheet">
     <link href="assets/css/base.css" media="all" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/project.css">
     <link rel="stylesheet" href="./assets/css/compornent.css">
     <link rel="stylesheet" href="./assets/css/utility.css">
     <link href="assets/css/style.css" media="all" rel="stylesheet">
+    <link href="assets/css/aboutsite.css" media="all" rel="stylesheet">
+    <link href="assets/css/abouttokushima.css" media="all" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
     <link rel="icon" href="./assets/images/favicon_tokushima_sogo.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon_tokushima_sogo.png">
@@ -229,62 +231,89 @@
         <!-- /searchArea -->
     </header>
     <!-- /header -->
-    <main class="l-main p-conceptBase__main">
-        <section id="conceptBase">
+    <main class="p-conceptBase__main">
+        <section id="p-aboutsite__main">
             <div class="p-conceptBase__heading u-bgIndigo">
-                <h2 class="p-conceptBase__heading__title u-color-white">お問い合わせフォーム</h2>
+                <h2 class="p-conceptBase__heading__title u-color-white">このサイトについて</h2>
             </div>
-            <!-- テーブルフォーム -->
-            <div id="conceptBase__inner">
-                <form action="#" id="form1" method="POST">
-                    <table class="p-conceptBase__formTable">
-                        <tbody class="p-conceptBase__formTable__item">
-                            <tr>
-                                <th>件名*</th>
-                                <td>
-                                    <select name="type" required>
-                                        <option value>選択してください</option>
-                                        <option value="1">質問1：掲載内容について</option>
-                                        <option value="2">質問2：掲載希望</option>
-                                        <option value="3">質問3：その他</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>お名前*</th>
-                                <td>
-                                    <input name="name" type="text" class="input01" required>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>メールアドレス*</th>
-                                <td>
-                                    <input name="email" type="text" class="input01" placeholder="(半角)" required>
+            <div class="c-aboutBox__item u-bgWhite">
+                <p class="c-aboutBox__font u-m40 ">
+                    私たちは国の求職者支援制度に基づく株式会社QLIP クリッププログラミングスクール「WEBプログラマー養成科」第8期生によって2021年に制作されたものです。
 
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>電話番号*</th>
-                                <td>
-                                    <input name="tel" type="tel" class="input02" placeholder="(半角数字)" required>
+                    このサイトを通して、徳島を知らない方々に徳島の魅力を知ってもらい、
+                    1つでも行きたいところを見つけて頂き、来県される際の参考になれば幸いです。
+                    内容はできるだけ正確を期していますが、責任を負うものではありません。
+                </p>
 
-                                </td>
-                            </tr>
-                            <tr class="c-conceptBase__formTable__item__textarea">
-                                <th>お問い合わせ内容*</th>
-                                <td>
-                                    <textarea name="comment" cols="30" rows="10"></textarea>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="c-contactSec__formTable__item__formButtons">
-                        <input type="reset" value="リセット " class="button02">
-                        <input type="submit" value="送信" class="button02 u-bgIndigo u-color-white">
-                    </div>
-                </form>
             </div>
+
+            <div class="p-conceptBase__heading u-bgIndigo">
+                <h2 class="p-conceptBase__heading__title u-color-white">参考サイト一覧</h2>
+            </div>
+            <div class="c-aboutBox__item u-bgWhite">
+                <p class="c-aboutBox__font u-m40">
+                    以下のサイトを参考元・引用元として、まとめさせて頂きました。<br>
+                    アドレスをクリックすると、リンク先へ飛びます。
+
+                </p>
+            </div>
+            <div class="c-aboutBox__tag u-bgIndigo">
+                <p class="u-aboutBox__tag__fonts u-color-white">
+                    地域情報、等
+
+                </p>
+
+            </div>
+            <table class="u-conceptBase__formTable__line">
+                <tbody class="p-conceptBase__formTable__item">
+                    <tr class="u-privacy__formTable__item">
+                        <th>ウィキペディア</th>
+                        <td>https://ja.wikipedia.org/wiki/</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="u-conceptBase__formTable__line">
+                <tbody class="p-conceptBase__formTable__item">
+                    <tr class="u-privacy__formTable__item">
+                        <th>徳島県観光情報:阿波ナビ</th>
+                        <td>http://www.awanavi.jp/</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="u-conceptBase__formTable__line">
+                <tbody class="p-conceptBase__formTable__item">
+                    <tr class="u-privacy__formTable__item">
+                        <th>周辺地図:Googleマップ</th>
+                        <td>https://www.google.co.jp/maps/?hl=ja</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="c-aboutBox__tag u-bgIndigo">
+                <p class="u-aboutBox__tag__fonts u-white">
+                                画像
+
+                            </p>
+
+            </div>
+            <table class="u-conceptBase__formTable__line">
+                <tbody class="p-conceptBase__formTable__item">
+                    <tr class="u-privacy__formTable__item">
+                        <th>イラストAC</th>
+                        <td>https://www.ac-illust.com/</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="u-conceptBase__formTable__line">
+                <tbody class="p-conceptBase__formTable__item">
+                    <tr class="u-privacy__formTable__item">
+                        <th>CLEANPNG</th>
+                        <td>https://www.cleanpng.com/</td>
+                    </tr>
+                </tbody>
+            </table>
+
         </section>
+
     </main>
     <!-- ここからフッター -->
     <section class="p-instaArea">

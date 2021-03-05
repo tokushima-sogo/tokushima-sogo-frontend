@@ -4,19 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お問い合わせ</title>
-    <link href="assets/css/reset.css" media="all" rel="stylesheet">
-    <link href="assets/css/base.css" media="all" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/project.css">
+    <title>検索結果</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/compornent.css">
+    <link rel="stylesheet" href="./assets/css/ptoject.css">
     <link rel="stylesheet" href="./assets/css/utility.css">
-    <link href="assets/css/style.css" media="all" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
-    <link rel="icon" href="./assets/images/favicon_tokushima_sogo.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon_tokushima_sogo.png">
+
 </head>
 <body>
-    <!-- header -->
     <header class="l-header">
         <div class="p-header__contents u-header__navListDetail__blue">
             <h1><a href="index.html"><img class="c-logo" src="assets/images/logo_header.png" alt="トクシマSOGO"></a></h1>
@@ -27,9 +23,9 @@
                             <div class="c-header__nav u-header__nav__white">ご案内</div>
                         </div>
                         <ul class="p-header__navListDetail p-header__navListDetail1 u-header__navListDetail__blue">
-                            <li><a class="c-header__navListDetail u-header__nav__white" href="#">サイトの使い方
+                            <li><a class="c-header__navListDetail u-header__nav__white" href="index.html#js-1">サイトの使い方
                                 </a></li>
-                            <li><a class="c-header__navListDetail u-header__nav__white" href="about-tokushima.html">徳島県について
+                            <li><a class="c-header__navListDetail u-header__nav__white" href="about tokushima.html">徳島県について
                                 </a></li>
                             <li><a class="c-header__navListDetail u-header__nav__white" href="#">徳島県の名物
                                 </a></li>
@@ -72,7 +68,7 @@
                             <div class="c-header__nav u-header__nav__white">県西部</div>
                         </div>
                         <ul class="p-header__navListDetail4 p-header__navListDetail u-header__navListDetail__blue">
-                            <li><a class="c-header__navListDetail u-header__nav__white" href="west.html">トップ
+                            <li><a class="c-header__navListDetail u-header__nav__white" href="#">トップ
                                 </a></li>
                             <li><a class="c-header__navListDetail u-header__nav__white" href="#">スポット
                                 </a></li>
@@ -87,7 +83,7 @@
                             <div class="c-header__nav u-header__nav__white">県東部</div>
                         </div>
                         <ul class="p-header__navListDetail5 p-header__navListDetail u-header__navListDetail__blue">
-                            <li><a class="c-header__navListDetail u-header__nav__white" href="west.html">トップ
+                            <li><a class="c-header__navListDetail u-header__nav__white" href="#">トップ
                                 </a></li>
                             <li><a class="c-header__navListDetail u-header__nav__white" href="#">スポット
                                 </a></li>
@@ -106,7 +102,7 @@
                                 </a></li>
                             <li><a class="c-header__navListDetail u-header__nav__white" href="#">クイズ
                                 </a></li>
-                            <li><a class="c-header__navListDetail u-header__nav__white" href="archiveSpecial.html">特集
+                            <li><a class="c-header__navListDetail u-header__nav__white" href="#">特集
                                 </a></li>
                         </ul>
                     </li>
@@ -114,10 +110,10 @@
             </nav>
             <div class="p-header__contentsList">
                 <ul>
-                    <li><a href="#"><img class="c-search u-mb5" src="assets/images/btn_header_seachOpen.png" alt="検索アイコン">
+                    <li><a href="#"><img class="c-search" src="assets/images/btn_header_seachOpen.png" alt="検索アイコン">
                             <div class="u-header__nav__white">検索</div>
                         </a></li>
-                    <li><a href="mymap.html"><img class="c-mapIcon u-mb5" src="assets/images/btn_header_map.png" alt="マップアイコン">
+                    <li><a href="#"><img class="c-mapIcon" src="assets/images/btn_header_map.png" alt="マップアイコン">
                             <div class="u-header__nav__white">MYマップ</div>
                         </a></li>
                     <li><img id="c-elevatorOpen" src="assets/images/btn_header_ev_off.png" alt="開くボタン"></li>
@@ -181,7 +177,8 @@
                 </ul>
             </nav>
         </div>
-        <!-- searchArea -->
+        <!-- ---------------------------------------- -->
+        <!-- 検索フォーム部分 -->
         <section class="p-seachArea">
             <div class="c-button__seachForm__close"></div>
             <form action="" method="post" class="searchandfilter">
@@ -196,6 +193,7 @@
 
                         <h4 class="u-mb10 u-text__center">エリアで探す</h4>
                         <ul class="p-radio__area u-mb40 group">
+                            <!-- <li><label><input type='radio' name='ofarea[]' value='0' checked='checked' /> エリア 一覧</label></li> -->
                             <li class="cat-item cat-item-5 u-ml15"><label class="p-label__seach u-bgColor--white"><input type='radio' name='ofarea[]' value='5' id="seach_south" /> 南部
                                     (4)</label>
                             </li>
@@ -213,6 +211,12 @@
                     <li class="u-mb40">
                         <h4 class="u-mb10 u-text__center">内容で探す</h4>
                         <ul class="p-radio__content">
+                            <!-- <li class="cat-item"><label><input class="postform" type="radio" name="ofpost_types[]"
+                                        value="post,page,spot,gourmet,souvenir" checked="checked"> All Post Types</label></li>
+                            <li class="cat-item"><label><input class="postform" type="radio" name="ofpost_types[]" value="post">
+                                    投稿</label></li>
+                            <li class="cat-item"><label><input class="postform" type="radio" name="ofpost_types[]" value="page">
+                                    固定ページ</label></li> -->
                             <li class="cat-item u-ml15"><label class="p-label__seach u-bgColor--white"><input class="postform" type="radio" name="ofpost_types[]" value="spot" id="seach_spot">
                                     スポット</label></li>
                             <li class="cat-item u-ml15"><label class="p-label__seach u-bgColor--white"><input class="postform" type="radio" name="ofpost_types[]" value="gourmet" id="seach_gourmet"> グルメ</label></li>
@@ -225,67 +229,24 @@
 
                 </div>
             </form>
+
         </section>
-        <!-- /searchArea -->
+
+        <!-- 検索フォームここまで -->
+        <!-- ------------------------------------------------------------- -->
     </header>
-    <!-- /header -->
-    <main class="l-main p-conceptBase__main">
-        <section id="conceptBase">
-            <div class="p-conceptBase__heading u-bgIndigo">
-                <h2 class="p-conceptBase__heading__title u-color-white">お問い合わせフォーム</h2>
-            </div>
-            <!-- テーブルフォーム -->
-            <div id="conceptBase__inner">
-                <form action="#" id="form1" method="POST">
-                    <table class="p-conceptBase__formTable">
-                        <tbody class="p-conceptBase__formTable__item">
-                            <tr>
-                                <th>件名*</th>
-                                <td>
-                                    <select name="type" required>
-                                        <option value>選択してください</option>
-                                        <option value="1">質問1：掲載内容について</option>
-                                        <option value="2">質問2：掲載希望</option>
-                                        <option value="3">質問3：その他</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>お名前*</th>
-                                <td>
-                                    <input name="name" type="text" class="input01" required>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>メールアドレス*</th>
-                                <td>
-                                    <input name="email" type="text" class="input01" placeholder="(半角)" required>
+    <h3 class="p-title">
+        <img src="./assets/images/tl_taxonomy_seachResult.png" alt="" srcset="" class="c-title__img u-mb20">
 
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>電話番号*</th>
-                                <td>
-                                    <input name="tel" type="tel" class="input02" placeholder="(半角数字)" required>
+    <div class="c-seachResult__text u-color-white u-bgIndigo">
+        <!-- 検索の選択によって内容が変わる文字列 -->
+        「県西部」「グルメ」の条件を満たす記事
+    </div>
+    </h3>
 
-                                </td>
-                            </tr>
-                            <tr class="c-conceptBase__formTable__item__textarea">
-                                <th>お問い合わせ内容*</th>
-                                <td>
-                                    <textarea name="comment" cols="30" rows="10"></textarea>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="c-contactSec__formTable__item__formButtons">
-                        <input type="reset" value="リセット " class="button02">
-                        <input type="submit" value="送信" class="button02 u-bgIndigo u-color-white">
-                    </div>
-                </form>
-            </div>
-        </section>
-    </main>
+    <!-- ------------------------------------------------------- -->
+
+    <!-- 検索結果 -->
     <!-- ここからフッター -->
     <section class="p-instaArea">
 
