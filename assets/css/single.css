@@ -255,8 +255,8 @@ button.p-singleBtn {
     width: 100%;
     border: 1px solid #2d294f;
     border-collapse: collapse;
+    vertical-align: middle;
 }
-
 
 
 /* 関連記事タイトル */
@@ -406,7 +406,7 @@ a.c-btnTag:hover svg {
 /* 基本情報テーブル */
 .c-singleTable__tr {
     height: 30px;
-    border: 1px solid #000000;
+    border: 1px solid #2d294f;
 }
 @media (min-width:768px) {
     .c-singleTable__tr {
@@ -421,7 +421,7 @@ a.c-btnTag:hover svg {
 @media (min-width:768px) {
     .c-singleTable__th,
     .c-singleTable__td{
-        padding: 16px;
+        padding: 21px;
     }
 }
 

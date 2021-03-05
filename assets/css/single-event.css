@@ -177,6 +177,12 @@ button.p-singleBtn {
     border: 1px solid #000000;
     border-collapse: collapse;
 }
+@media (min-width:1025px) {
+    .p-singleTable {
+    width: 70%;
+    margin: 0 auto;
+}
+}
 
 /* c */
 /* 記事タイトル */
@@ -286,7 +292,7 @@ a.c-btnTag::before {
     a.c-btnTag::before {
         width: 80px;
     }
-
+}
 
 /* ボタン内のsvg */
 a.c-btnTag svg {
@@ -313,11 +319,11 @@ a.c-btnTag:hover svg {
 /* 基本情報テーブル */
 .c-singleTable__tr {
     height: 30px;
-    border: 1px solid #000000;
+    border: 1px solid #2d294f;
 }
 @media (min-width:768px) {
     .c-singleTable__tr {
-        height: 80px;
+        height: 60px;
     }
 }
 
@@ -328,7 +334,7 @@ a.c-btnTag:hover svg {
 @media (min-width:768px) {
     .c-singleTable__th,
     .c-singleTable__td{
-        padding: 26px;
+        padding: 21px;
     }
 }
 
@@ -336,24 +342,33 @@ a.c-btnTag:hover svg {
     width: 80px;
     background: #2d294f;
     color: #f8efef;
-    font-size: 14px;
+    font-size: 1.4rem;
     letter-spacing: 1px;
 }
 @media (min-width:768px) {
     .c-singleTable__th {
-        width: 240px;
-        font-size: 24px;
-        letter-spacing: 2px;
+        width: 160px;
+        font-size: 1.8rem;
+    }
+}
+@media (min-width:1025px) {
+    .c-singleTable__th {
+        width: 25%;
     }
 }
 
 .c-singleTable__td {
-    font-size: 12px;
     background: #f8efef;
+    font-size: 1.4rem;
 }
 @media (min-width:768px) {
     .c-singleTable__td{
-        font-size: 22px;
+        font-size: 1.8rem;
+    }
+}
+@media (min-width:1025px) {
+    .c-singleTable__td {
+        width: 75%;
     }
 }
 /* テーブルend */
