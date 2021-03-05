@@ -223,9 +223,9 @@ button.p-singleBtn {
     min-width: 100px;
     margin: 0 auto;
     padding: 6px 12px;
-    border-radius: 5px;
+    border-radius: 20px;
     border: 1px solid #000000;
-    font-size: 16px;
+    font-size: 1.6rem;
     letter-spacing: 1px;
     text-align: center;
 }
@@ -238,7 +238,7 @@ button.p-singleBtn {
     .c-singleTag__text {
         width: 155px;
         padding: 14px;
-        font-size: 22px;
+        font-size: 2.2rem;
     }
 }
 
@@ -246,7 +246,7 @@ button.p-singleBtn {
 .c-singleTagList__li {
     padding: 5px;
     letter-spacing: 1px;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 @media (min-width:400px) {
     .c-singleTagList__li {
@@ -256,7 +256,7 @@ button.p-singleBtn {
 @media (min-width:768px) {
     .c-singleTagList__li {
         padding: 14px;
-        font-size: 22px;
+        font-size: 2.2rem;
     }
 }
 
@@ -286,7 +286,7 @@ a.c-btnTag::before {
     a.c-btnTag::before {
         width: 80px;
     }
-}
+
 
 /* ボタン内のsvg */
 a.c-btnTag svg {

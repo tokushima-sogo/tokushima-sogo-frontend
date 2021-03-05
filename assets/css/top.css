@@ -4,11 +4,7 @@
 .l-main {
     padding-top: 70px;
 }
-@media (min-width:768px) {
-    .l-main {
-        padding-top: 100px;
-    }
-}
+
 
 .l-department {
     position: relative;
@@ -23,12 +19,12 @@
 .p-elevatorArea {
     position: relative;
     width: 100%;
-    background: url("../images/mv_front_tabletNEW.jpg") no-repeat center top;
+    background: url(../images/mv_front_tablet.jpg) no-repeat center top;
     z-index: 0;
 }
 @media (min-width:768px) {
     .p-elevatorArea {
-        background-image: url("../images/mv_front_webNEW.jpg");
+        background-image: url(../images/mv_front_web.jpg);
         background-size: cover;
     }
 }
@@ -57,17 +53,19 @@
     width: 100%;
     margin: 0 auto;
     padding: 10px 0;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-end;
 }
 @media (min-width:400px) {
     .p-special {
-        width: 50%;
+        justify-content: space-around;
+        width: 90%;
     }
 }
 @media (min-width:768px) {
     .p-special {
-        height: 60%;
+        width: 80%;
+        height: 70%;
     }
 }
 
@@ -80,7 +78,7 @@
 /* リンクエリア */
 .p-floorLink {
     width: 100%;
-    padding: 10px 0;
+    padding: 0;
     justify-content: center;
     align-items: center;
 }
@@ -91,15 +89,17 @@
     }
 }
 
-/* タブレット以上の画像表示用 */
+/* スポット画像用 */
 .p-floorImg {
     position: relative;
-    width: 240px;
+    width: 90%;
     height: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
 }
 @media (min-width:768px) {
     .p-floorImg {
-        width: 600px;
+        width: 550px;
         height: 100%;
     }
 }
@@ -110,32 +110,31 @@
     }
 }
 
+
 /* ご案内 */
 .p-guideArea {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     padding: 15px 30px;
-    background: rgba(226, 224, 239, 0.6);
-    border-radius: 20px;
+    background: rgba(234, 228, 173, 0.8);
+    border-radius: 40px;
     border: 1px solid #2d294f;
     text-align: center;
-}
-@media (min-width:400px) {
-    .p-guideArea {
-        width: 90%;
-    }
-}
-@media (min-width:1025px) {
-    .p-guideArea {
-        height: 45%;
-    }
 }
 
 /* 徳島リンク */
 .p-tokushimaLink {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     padding: 5px 0;
+    text-align: left;
 }
+@media (min-width:400px) {
+    .p-tokushimaLink {
+        width: 250px;
+    }
+}
+
 
 /* トップへどうぞ */
 .p-topIcon {
@@ -152,8 +151,10 @@
 
 /* 新着情報エリア */
 .p-newsArea {
+    position: relative;
     height: 70px;
     background: #f0f0f0;
+    z-index: 2;
 }
 
 /* c */
@@ -181,48 +182,64 @@ a.c-specialLink {
 /* テキスト */
 .c-floor__text {
     padding: 5px 0;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.5;
 }
 @media (min-width:768px) {
     .c-floor__text {
         padding: 10px 0;
-        font-size: 24px;
+        font-size: 1.8rem;
     }
 }
 
 /* キャッチコピー */
+/* 768px以下は非表示 */
 .c-catchCopy {
-    width: 156px;
+    display: none;
+}
+@media (min-width:768px) {
+.c-catchCopy {
+    display: block;
+    width: 200px;
     position: absolute;
     top: 0;
     left: 0;
 }
+}
 @media (min-width:1025px) {
     .c-catchCopy {
-    width: 312px;
+    width: 250px;
 }
 }
 
 /* フロア名 */
 .c-floorName {
-    padding: 8px;
-    color: #e2e0ef;
-    font-size: 22px;
-    text-align: center;
-    letter-spacing: 1px;
-    text-shadow: 0 2px 2px #2d294f;
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    background: #e2e0ef;
+    border: 1px solid #2d294f;
+    border-radius: 120px;
+    color: #2d294f;
 }
 @media (min-width:768px) {
     .c-floorName {
-        font-size: 24px;
-    }
+        width: 300px;
 }
-@media (min-width:1025px) {
-    .c-floorName {
-        font-size: 34px;
-    }
 }
+/* 矢印つける */
+.c-floorName::before {
+    content: "\f0da";
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Font Awesome 5 Free";
+    color: inherit;
+    font-size: 1.4rem;
+}
+
 
 
 /* 階数 */
@@ -234,21 +251,14 @@ a.c-specialLink {
 @media (min-width:768px) {
     .c-floorNumber {
         padding-right: 25px;
-        font-size: 28px;
+        font-size: 24px;
     }
 }
-@media (min-width:768px) {
-    .c-floorNumber {
-        padding-right: 35px;
-        font-size: 38px;
-    }
-}
-
 
 /* スポット画像 */
 .c-floorSpot {
-    width: 180px;
-    height: 120px;
+    width: 150px;
+    height: 100px;
 }
 @media (min-width:768px) {
     .c-floorSpot {
@@ -266,15 +276,15 @@ a.c-specialLink {
 /* マップ画像 */
 .c-floorMap {
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     top: 0;
     right: 0;
 }
 @media (min-width:768px) {
     .c-floorMap {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
     }
 }
 
@@ -283,38 +293,53 @@ a.c-specialLink {
     margin: 0 auto;
     padding: 10px 0;
     font-size: 14px;
+    color: #2d294f;
 }
 @media (min-width:768px) {
     .c-guideTitle {
-        padding: 20px 0;
+        padding: 15px 0;
         font-size: 26px;
     }
 }
 @media (min-width:1025px) {
     .c-guideTitle {
-        padding: 30px 0;
+        padding: 20px 0;
         font-size: 30px;
     }
 }
 
 /* 徳島についてなどのリンク */
-.c-tokushimaLink a {
+.c-tokushimaLink {
+    position: relative;
+    padding: 10px;
+}
+
+a.c-tokushimaLink {
     display: block;
     width: 100%;
-    padding: 5px 0;
-    font-size: 16px;
+    height: 100%;
+    padding: 10px;
+    font-size: 1.6rem;
 }
 @media (min-width:768px) {
-    .c-tokushimaLink a {
+    a.c-tokushimaLink {
         padding: 15px 0;
-        font-size: 24px;
+        font-size: 2.2rem;
     }
 }
 @media (min-width:1025px) {
-    .c-tokushimaLink a {
+    a.c-tokushimaLink {
         padding: 20px 0;
-        font-size: 28px;
+        font-size: 2.8rem;
     }
+}
+
+.fa-caret-right {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
 }
 
 /* 上へどうぞ */
@@ -367,16 +392,6 @@ a.c-horrorLink {
 }
 
 /* u */
-/* 表示非表示 */
-.u-web {
-    display: none;
-}
-@media (min-width:768px) {
-    .u-web {
-        display: block;
-    }
-}
-
 /* flex */
 .u-flex {
     display: flex;
@@ -410,11 +425,11 @@ a.c-horrorLink {
 }
 
 /* スポット画像2枚目 */
-.u-floorSpot--web {
+.u-floorSpot--2nd {
     display: none;
 }
 @media (min-width:768px) {
-    .u-floorSpot--web {
+    .u-floorSpot--2nd {
         display: block;
         position: absolute;
         width: 240px;
@@ -424,7 +439,7 @@ a.c-horrorLink {
     }
 }
 @media (min-width:1025px) {
-    .u-floorSpot--web {
+    .u-floorSpot--2nd {
         width: 270px;
         height: 180px;
     }
@@ -438,32 +453,25 @@ a.c-horrorLink {
 }
 @media (min-width:768px) {
     .u-6f {
-        padding-top: 50px;
+        padding-top: 250px;
         height: 1100px;
     }
 }
-/* 6FだけPCサイズでフロア名真ん中 */
-@media (min-width:768px) {
-    .u-6f .c-floorName {
-        margin: 0 auto;
-    }
-}
+
 
 /* 6Fのh3 */
 .u-specialName {
     width: 120px;
     padding: 6px;
-    background: #e2e0ef;
+    background: #2d294f;
     border: 1px solid #2d294f;
-    border-radius: 20px;
-    color: #2d294f;
-    font-size: 12px;
-    text-shadow: none;
+    color: #f8efef;
+    font-size: 1.2rem;
 }
 @media (min-width:768px) {
     .u-specialName {
-        width: 240px;
-        font-size: 24px;
+        width: 220px;
+        font-size: 2.4rem;
     }
 }
 
@@ -472,8 +480,148 @@ a.c-horrorLink {
     height: 200px;
     padding: 15px 0;
     background: #000000;
-    background-image: url("../images/bg_front_horror.png");
+    background-image: url(../images/bg_front_horror.png);
     background-size: 200px;
     background-repeat: no-repeat;
     background-position: left top;
+}
+
+.u-b1 h2 {
+    padding: 15px 0;
+    width: 100%;
+    color: #ffffff;
+}
+
+.u-bgIndigo {
+    background-color: #2d294f;
+}
+.u-lightPurple{
+    color: #e2e0ef;
+}
+
+#wrap {
+    overflow: hidden;
+}
+
+/*
+/* animation中はスクロールさせない */
+body {
+    animation: disableScroll .7s linear 8.8s both;
+    }
+
+    @keyframes
+    disableScroll {
+    0%{
+    overflow: hidden;
+    }
+    100%{
+    overflow: auto;
+    }
+}
+
+/* ファーストビューアニメーション */
+#clock {
+    position: relative;
+    width: 50vw;
+    height: 100vh;
+    margin: auto;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    overflow:hidden;
+
+}
+
+#clock img {
+    position: absolute;
+    width: 90%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+/* 時針 */
+#minute-hand{
+    animation: rotation-h 0.8s linear infinite; /* 0.8秒、12時間かけて一周 */
+        transform: rotate(0deg);
+        animation-iteration-count:5;
+}
+
+/* 時針の回転アニメーション */
+@keyframes rotation-h {
+    0% {transform: rotate(0deg)} /* 初期位置0時の位置 */
+    100% {transform: rotate(-1035deg)} /* 初期位置 + 360deg で一周 */
+}
+
+/* 分針 */
+#hour-hand{
+    animation: rotation-h 0.5s linear infinite; /* 0.5秒、12時間かけて一周 */
+        transform: rotate(0deg);
+        animation-iteration-count:7;
+}
+
+/* 時針の回転アニメーション */
+@keyframes rotation-h {
+    0% {transform: rotate(0deg)} /* 初期位置 0時の位置 */
+    100% {transform: rotate(-360deg)} /* 初期位置 + 360deg で一周 */
+}
+
+/* 針が止まったら消える */
+.p-loadClock {
+    -webkit-animation: seconds 0.1s forwards;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-delay: 5s;
+    animation: seconds 0.1s forwards;
+    animation-iteration-count: 1;
+    animation-delay: 4.1s;
+}
+
+@-webkit-keyframes seconds {
+    0% {
+    opacity: 1;
+    }
+    100% {
+    opacity: 0;
+    left: -9999px;
+    }
+}
+
+/* 0時の状態の時計 */
+#back-clock {
+    position: absolute;
+    z-index: -1;
+    width: 50vw;
+    height: 100vh;
+    animation: animationZoom1 5s ease-in-out forwards;
+    animation-delay: 5s;
+}
+
+@keyframes animationZoom1 {
+100% { transform: scale(0)}
+}
+
+/* 最後フェードアウトして消える */
+#Firstview{
+
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    animation: fadein-keyframes 7s ease 0s 1 forwards;
+    animation-delay: 5s;
+}
+
+@keyframes fadein-keyframes {
+    0% {
+    opacity: 1;
+    }
+
+    100% {
+    opacity: 0;
+    z-index: -2;
+
+    }
 }

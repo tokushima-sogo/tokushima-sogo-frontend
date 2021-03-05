@@ -1,10 +1,13 @@
 @charset "utf-8";
-/* header */
-.l-header {
-  height: 100px;
-  background-color: navy;
+/* l */
+.l-main {
+    padding-top: 70px;
 }
-
+@media (min-width:1025px) {
+    .l-main {
+        padding-top: 100px;
+    }
+}
 /* mainのカラー */
 .p-conceptBase__main {
   padding: 85px 0 160px 0;
@@ -24,7 +27,6 @@
 }
 
 .p-conceptBase__heading__title {
-  /* color: white; */
   font-weight: 200;
   font-size: 35px;
   line-height: 85px;
@@ -51,11 +53,11 @@
   background-color: white;
 }
 
-.c-conceptBase__formTable__item tr td {
+.p-conceptBase__formTable__item tr td {
   width: 70%;
 }
 
-.c-conceptBase__formTable__item th {
+.p-conceptBase__formTable__item th {
   display: table-cell;
   vertical-align: middle;
   background-color: #997653;
@@ -63,19 +65,18 @@
   font-weight: 100;
   border: 1px solid #707070;
   padding: 10px 20px;
-  /* width: 40%; */
   color: #2d294f;
 }
 
 .c-conceptBase__formTable__item__textarea {
-  border: 2px solid #707070;
+  border: 1px solid #707070;
 }
 .c-conceptBase__formTable__item__textarea td textarea {
   box-sizing: border-box;
   width: 100%;
 }
 
-.c-conceptBase__formTable__item input,
+.p-conceptBase__formTable__item input,
 select {
   width: 100%;
   vertical-align: middle;
@@ -90,28 +91,45 @@ select {
 }
 
 .c-contactSec__formTable__item__formButtons input {
-  font-size: 20px;
+  -webkit-appearance: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 2rem;
   text-align: center;
-  width: 250px;
+  width: 120px;
   height: 60px;
-  margin: 30px 0 30px 0;
-  color: white;
+  margin: 30px 15px;
 }
 
-/* footer */
-footer.l-footer {
-  height: 520px;
-  background-color: #2d294f;
+.c-contactSec__formTable__item__formButtons input[type="submit"]:hover {
+  background: #cf7e7c;
+  border: 1px solid #cf7e7c;
 }
 
+/* SP用CSS */
+/* メディアクエリ */
+@media screen and (max-width: 599px) {
+  .u-privacy__formTable__item th,
+  .u-privacy__formTable__item,
+  .p-conceptBase__formTable__item {
+    display: block;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-conceptBase__heading__title {
+    font-size: 24px;
+  }
+}
 /* 色指定 */
 .u-bgIndigo {
   background-color: #2d294f;
 }
-.u-white {
+/* 文字の色、白指定 */
+.u-color-white {
   color: white;
 }
-
+/* 背景の色白指定 */
 .u-bgWhite {
   background-color: white;
 }

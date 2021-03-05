@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 /* l */
 .l-main {
     padding-top: 70px;
@@ -12,7 +13,7 @@
 
 .l-singleArticle {
     margin: 0 auto;
-    background: #c2a062;
+    background: #ffffff;
 }
 
 .l-slickSlider {
@@ -31,15 +32,51 @@
     padding: 0;
 }
 
-/* テーブル */
-.l-singleTable {
+
+/* マップとテーブル */
+.l-singleInfo {
     width: 90%;
     margin: 0 auto;
-    padding: 10px 0 30px;
+    justify-content: center;
+    flex-direction: column;
+}
+@media (min-width:1025px) {
+    .l-singleInfo {
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 30px 0 50px;
+    }
+}
+
+/* マップ */
+.l-singleMap {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+@media (min-width:1025px) {
+    .l-singleMap {
+        display: inline-block;
+        width: 40%;
+    }
+}
+
+/* テーブル */
+.l-singleTable {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 0 30px;
 }
 @media (min-width:768px) {
     .l-singleTable {
         padding: 30px 0 50px;
+    }
+}
+@media (min-width:1025px) {
+    .l-singleTable {
+        display: inline-block;
+        width: 55%;
+        padding: 0;
     }
 }
 
@@ -55,7 +92,7 @@
 .p-breadCrumb {
     width: 100%;
     padding: 10px;
-    font-size: 10px;
+    font-size: 12px;
 }
 @media (min-width:768px) {
     .p-breadCrumb {
@@ -67,8 +104,8 @@
     padding: 3px;
     letter-spacing: 1px;
 }
-.fa-angle-right {
-    color: #2d294f;
+.p-breadCrumb__inner>i {
+    color: #d37b6a;
 }
 /* /パンくずナビゲーション */
 
@@ -166,7 +203,7 @@ button.p-singleBtn {
     -ms-user-select: none;
     user-select: none;
     -webkit-transition: all 0.3s;
-    font-size: 12px;
+    font-size: 1.2rem;
     transition: all 0.3s;
     letter-spacing: 1px;
     border-radius: 13px;
@@ -184,20 +221,48 @@ button.p-singleBtn {
     .p-singleBtn,
     a.p-singleBtn,
     button.p-singleBtn {
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 }
+
+/* 地図画像親要素 */
+.p-singleMap {
+    position: relative;
+    padding-bottom: 56.25%;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+@media (min-width:768px) {
+    .p-singleMap {
+    height: 400px;
+}
+}
+
+/* 地図画像の指定 */
+.p-singleMap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 /* テーブル */
 .p-singleTable {
     width: 100%;
-    border: 1px solid #000000;
+    border: 1px solid #2d294f;
     border-collapse: collapse;
 }
+
+
 
 /* 関連記事タイトル */
 .p-title {
     text-align: center;
+    padding: 30px 0;
 }
 
 
@@ -214,7 +279,7 @@ button.p-singleBtn {
     background: #2d294f;
     color: #f8efef;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.8rem;
     letter-spacing: 2px;
 }
 @media (min-width:768px) {
@@ -230,12 +295,12 @@ button.p-singleBtn {
     margin: 0 auto;
     padding: 10px 0;
     line-height: 1.5;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 @media (min-width:768px) {
     .c-singleArticle__text {
         padding: 20px 0;
-        font-size: 18px
+        font-size: 1.8rem
     }
 }
 @media (min-width:1025px) {
@@ -251,9 +316,9 @@ button.p-singleBtn {
     min-width: 100px;
     margin: 0 auto;
     padding: 6px 12px;
-    border-radius: 5px;
+    border-radius: 20px;
     border: 1px solid #000000;
-    font-size: 16px;
+    font-size: 1.6rem;
     letter-spacing: 1px;
     text-align: center;
 }
@@ -266,7 +331,7 @@ button.p-singleBtn {
     .c-singleTag__text {
         width: 155px;
         padding: 14px;
-        font-size: 22px;
+        font-size: 2.2rem;
     }
 }
 
@@ -274,7 +339,7 @@ button.p-singleBtn {
 .c-singleTagList__li {
     padding: 5px;
     letter-spacing: 1px;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 @media (min-width:400px) {
     .c-singleTagList__li {
@@ -284,7 +349,7 @@ button.p-singleBtn {
 @media (min-width:768px) {
     .c-singleTagList__li {
         padding: 14px;
-        font-size: 22px;
+        font-size: 2.2rem;
     }
 }
 
@@ -345,7 +410,7 @@ a.c-btnTag:hover svg {
 }
 @media (min-width:768px) {
     .c-singleTable__tr {
-        height: 80px;
+        height: 60px;
     }
 }
 
@@ -356,7 +421,7 @@ a.c-btnTag:hover svg {
 @media (min-width:768px) {
     .c-singleTable__th,
     .c-singleTable__td{
-        padding: 26px;
+        padding: 16px;
     }
 }
 
@@ -364,24 +429,33 @@ a.c-btnTag:hover svg {
     width: 80px;
     background: #2d294f;
     color: #f8efef;
-    font-size: 14px;
+    font-size: 1.4rem;
     letter-spacing: 1px;
 }
 @media (min-width:768px) {
     .c-singleTable__th {
-        width: 240px;
-        font-size: 24px;
-        letter-spacing: 2px;
+        width: 160px;
+        font-size: 1.8rem;
+    }
+}
+@media (min-width:1025px) {
+    .c-singleTable__th {
+        width: 25%;
     }
 }
 
 .c-singleTable__td {
-    font-size: 12px;
     background: #f8efef;
+    font-size: 1.4rem;
 }
 @media (min-width:768px) {
     .c-singleTable__td{
-        font-size: 22px;
+        font-size: 1.8rem;
+    }
+}
+@media (min-width:1025px) {
+    .c-singleTable__td {
+        width: 75%;
     }
 }
 /* テーブルend */
