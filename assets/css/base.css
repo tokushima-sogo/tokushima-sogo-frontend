@@ -31,16 +31,16 @@ a:hover {
 
 body {
   /* サイト全体のコンテンツ領域指定 */
+    box-sizing: border-box;
     width: 100%;
     margin: 0 auto;
-    color: #000000;
-    background: #eae4ad;
+    color: #333333;
   /* フォント指定 */
     font-family: "mamelon3.5";
     font-size: 1.4rem;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   /* 768px以上に適用されるCSS（タブレット・PC用） */
     body {
     /* フォント指定 */
@@ -121,9 +121,6 @@ main {
 .u-header__navListDetail__blue{
     background-color: #252F4D;
 }
-.u-header__nav__white{
-    color: #fff;
-}
 
 .p-header__navListDetail1{
     transform: translate(-30px, 0px);
@@ -184,7 +181,7 @@ main {
     vertical-align: middle;
 }
 
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
     .p-header__contentsList ul{
         padding-right: 10px;
     }
@@ -213,32 +210,10 @@ main {
 
 
 /* ここからバーガーメニュー */
-.c-elevatorBtn{
-    width: 40px;
-}
-
 .p-header__contentsBurgerTop{
     height: 70px;
     width: 100vw;
 }
-#c-elevatorClose{
-    position: absolute;
-    height: 50px;
-    right: 40px;
-    top: 10px;
-}
-@media screen and (max-width: 767px){
-    #c-elevatorClose{
-    position: absolute;
-    right: 17px;
-    top: 10px;
-    }
-}
-
-/* .u-header__contentsBurgerNav__beige{
-    background-color: #eae4ad;
-} */
-
 
 /* 高さもう少し */
 .p-header__contentsBurgerNav{
@@ -272,10 +247,6 @@ main {
     text-align: center;
 }
 
-.u-BurgerNavDetailA__blue{
-    color: #252F4D;
-}
-
 .p-BurgerNavDetail a:hover{
     font-weight: bold;
 }
@@ -285,10 +256,6 @@ main {
     display: inline-block;
     padding-top: 10px;
     width: 100%;
-}
-
-.c-footer__contentsDetail li a{
-    text-align: center;
 }
 
 #p-header__contentsBurger{
@@ -315,6 +282,36 @@ main {
 #p-header__contentsBurger ul li{
     padding: 0 20%;
 }
+}
+
+
+
+@media screen and (max-width: 1024px){
+    .p-topNav{
+        display: none;
+    }
+}
+@media screen and (min-width: 1025px){
+    .p-header__contentsList li:nth-child(3){
+        display: none;
+    }
+}
+
+.c-elevatorBtn{
+    width: 40px;
+}
+#c-elevatorClose{
+    position: absolute;
+    height: 50px;
+    right: 40px;
+    top: 10px;
+}
+@media screen and (max-width: 767px){
+    #c-elevatorClose{
+    position: absolute;
+    right: 17px;
+    top: 10px;
+    }
 }
 
 .c-header__contentsBurgerNavBtn{
@@ -344,16 +341,7 @@ main {
     padding-left: 10px;
 }
 
-@media screen and (max-width: 1024px){
-    .p-topNav{
-        display: none;
-    }
-}
-@media screen and (min-width: 1025px){
-    .p-header__contentsList li:nth-child(3){
-        display: none;
-    }
-}
+
 
 /* ここからフッター */
 .c-fab{
@@ -381,7 +369,6 @@ main {
 .l-footer{
     position: relative;
     width: 100%;
-    background-color: #252F4D;
     padding: 23px 0 35px 0;
     z-index: 2;
 }
