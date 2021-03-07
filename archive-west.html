@@ -116,8 +116,52 @@
             <!-- /header__contentsBurger -->
         </div>
         <!-- /header__contents -->
-        <!-- searchArea -->
-        <!-- /searcheArea -->
+        <section class="l-searchArea">
+            <img src="./assets/images/btn_searchForm_close.png" alt="" srcset="" width="25px" height="25px" class="c-button__searchForm--close">
+            <!-- <div class="c-button__searchForm__close"></div> -->
+            <form action="" method="post" class="searchandfilter">
+                <div>
+                    <ul>
+
+                        <li class="p-search__keyword u-searchForm--mb40"><input type="text" name="ofsearch" placeholder="　Search &hellip;" value="">
+                            <div class="c-icon__submit"></div>
+                        </li>
+
+                        <li class="u-searchForm--mb40">
+                            <h4 class="c-title__searchForm">エリアで探す</h4>
+                            <ul class="l-radio__area group">
+                                <li class="cat-item cat-item-5"><label class="p-label__search--area"><input type='radio' name='ofarea[]' value='5' /> 南部
+                                        (4)</label>
+                                </li>
+                                <li class="cat-item cat-item-4 u-searchRabel--ml15"><label class="p-label__search--area "><input type='radio' name='ofarea[]' value='4' /> 徳島市内
+                                        (4)</label>
+                                </li>
+                                <li class="cat-item cat-item-2 u-searchRabel--ml15"><label class="p-label__search--area "><input type='radio' name='ofarea[]' value='2' /> 東部
+                                        (5)</label>
+                                </li>
+                                <li class="cat-item cat-item-3 u-searchRabel--ml15"><label class="p-label__search--area "><input type='radio' name='ofarea[]' value='3' /> 西部
+                                        (4)</label>
+                                </li>
+                            </ul><input type="hidden" name="ofarea_operator" value="and" />
+                        </li>
+
+                        <li class="u-searchForm--mb40">
+                            <h4 class="c-title__searchForm">内容で探す</h4>
+                            <ul class="l-radio__content">
+                                <li class="cat-item"><label class="p-label__search--content "><input class="postform" type="radio" name="ofpost_types[]" value="spot">
+                                        スポット</label></li>
+                                <li class="cat-item u-searchRabel--ml15"><label class="p-label__search--content"><input class="postform" type="radio" name="ofpost_types[]" value="gourmet"> グルメ</label></li>
+                                <li class="cat-item u-searchRabel--ml15"><label class="p-label__search--content"><input class="postform" type="radio" name="ofpost_types[]" value="souvenir"> ショップ</label></li>
+                            </ul>
+                        </li>
+                        <li class="l-submit__radio"><input type="hidden" name="ofsubmitted" value="1">
+                            <label class="c-label_submit"><input type="submit" value="検索">この条件で検索</label>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </section>
+        <!-- /searchArea -->
     </header>
     <!-- /header -->
     <main class="l-main">
