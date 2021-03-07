@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>トクシマSo Go！</title>
-    <link rel="stylesheet" href="./assets/reset.css">
-    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/single-event.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./assets/css/slick.css">
     <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
     <link rel="icon" href="./assets/images/favicon_tokushima_sogo.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon_tokushima_sogo.png">
@@ -115,42 +118,42 @@
             <!-- /header__contentsBurger -->
         </div>
         <!-- /header__contents -->
+        <!-- searchArea -->
         <section class="l-searchArea">
             <img src="./assets/images/btn_searchForm_close.png" alt="" srcset="" width="25px" height="25px" class="c-button__searchForm--close">
-            <!-- <div class="c-button__searchForm__close"></div> -->
             <form action="" method="post" class="searchandfilter">
                 <div>
                     <ul>
 
-                        <li class="p-search__keyword u-searchForm--mb40"><input type="text" name="ofsearch" placeholder="　Search &hellip;" value="">
+                        <li class="p-search__keyword u-mb40"><input type="text" name="ofsearch" placeholder="　Search &hellip;" value="">
                             <div class="c-icon__submit"></div>
                         </li>
 
-                        <li class="u-searchForm--mb40">
+                        <li class="u-mb40">
                             <h4 class="c-title__searchForm">エリアで探す</h4>
                             <ul class="l-radio__area group">
                                 <li class="cat-item cat-item-5"><label class="p-label__search--area"><input type='radio' name='ofarea[]' value='5' /> 南部
                                         (4)</label>
                                 </li>
-                                <li class="cat-item cat-item-4 u-searchRabel--ml15"><label class="p-label__search--area "><input type='radio' name='ofarea[]' value='4' /> 徳島市内
+                                <li class="cat-item cat-item-4 u-searchLabel--ml15"><label class="p-label__search--area "><input type='radio' name='ofarea[]' value='4' /> 徳島市内
                                         (4)</label>
                                 </li>
-                                <li class="cat-item cat-item-2 u-searchRabel--ml15"><label class="p-label__search--area "><input type='radio' name='ofarea[]' value='2' /> 東部
+                                <li class="cat-item cat-item-2 u-searchLabel--ml15"><label class="p-label__search--area "><input type='radio' name='ofarea[]' value='2' /> 東部
                                         (5)</label>
                                 </li>
-                                <li class="cat-item cat-item-3 u-searchRabel--ml15"><label class="p-label__search--area "><input type='radio' name='ofarea[]' value='3' /> 西部
+                                <li class="cat-item cat-item-3 u-searchLabel--ml15"><label class="p-label__search--area "><input type='radio' name='ofarea[]' value='3' /> 西部
                                         (4)</label>
                                 </li>
                             </ul><input type="hidden" name="ofarea_operator" value="and" />
                         </li>
 
-                        <li class="u-searchForm--mb40">
+                        <li class="u-mb40">
                             <h4 class="c-title__searchForm">内容で探す</h4>
                             <ul class="l-radio__content">
                                 <li class="cat-item"><label class="p-label__search--content "><input class="postform" type="radio" name="ofpost_types[]" value="spot">
                                         スポット</label></li>
-                                <li class="cat-item u-searchRabel--ml15"><label class="p-label__search--content"><input class="postform" type="radio" name="ofpost_types[]" value="gourmet"> グルメ</label></li>
-                                <li class="cat-item u-searchRabel--ml15"><label class="p-label__search--content"><input class="postform" type="radio" name="ofpost_types[]" value="souvenir"> ショップ</label></li>
+                                <li class="cat-item u-searchLabel--ml15"><label class="p-label__search--content"><input class="postform" type="radio" name="ofpost_types[]" value="gourmet"> グルメ</label></li>
+                                <li class="cat-item u-searchLabel--ml15"><label class="p-label__search--content"><input class="postform" type="radio" name="ofpost_types[]" value="souvenir"> ショップ</label></li>
                             </ul>
                         </li>
                         <li class="l-submit__radio"><input type="hidden" name="ofsubmitted" value="1">
@@ -181,7 +184,7 @@
         <section class="l-singleArticle">
             <!-- singleHeader -->
             <div class="l-singleHeader">
-                <h2 class="c-singleArticle__title">記事タイトル</h2>
+                <h2 class="c-singleArticle__title u-center">記事タイトル</h2>
                 <!-- /singleArticle__title -->
             </div>
             <!-- /singleHeader -->
@@ -380,7 +383,10 @@
     </footer>
     <!-- /footer -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./assets/test/menu.js"></script>
-    <script src="./assets/test/searchForm.js"></script>
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/searchForm.js"></script>
+    <!-- slick -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/slick.setting.js"></script>
 </body>
 </html>
