@@ -539,6 +539,25 @@ a.c-btnTag:hover svg {
     display: grid;
 }
 
+/* margin */
+.u-mr15 {
+    margin-right: 15px;
+}
+
+/* 地域別カラー */
+.u-south {
+    background: #991f26;
+}
+.u-city {
+    background: #d1a429;
+}
+.u-west {
+    background: #004e3f;
+}
+.u-east {
+    background: #539199;
+}
+
 /* いいね！アイコン */
 a.u-btnTag--fav svg {
     fill: #d37b6a;
