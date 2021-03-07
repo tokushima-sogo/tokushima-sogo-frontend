@@ -48,7 +48,6 @@ body {
     position: relative;
 }
 
-
 .l-main {
     padding-top: 70px;
 }
@@ -62,6 +61,56 @@ body {
     position: relative;
     padding: 40px 0;
     z-index: 2;
+}
+
+.l-searchArea {
+    width: 84vw;
+    right: 0;
+    padding-top: 70px;
+    position: absolute;
+    margin: 0 8vw 0 8vw;
+    background-color: #ffffff;
+}
+@media screen and (min-width: 1025px) {
+.l-searchArea {
+    width: 45vw;
+    right: 0;
+    padding-top: 70px;
+    position: absolute;
+    margin: 0 5vw 0 0;
+}
+}
+
+/* ラジオボタン */
+input[type="radio"] {
+    display: none;
+}
+
+/* エリアで探す */
+.l-radio__area {
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* 内容で探す */
+.l-radio__content {
+    display: flex;
+    justify-content: center;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+/* 送信ボタン */
+input[type="submit"] {
+    display: none;
+}
+
+.l-submit__radio {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 40px 0;
 }
 
 
@@ -188,6 +237,124 @@ body {
         display: none;
     }
 }
+/* -------------------------------- */
+
+
+/* 検索フォーム
+----------------------------------- */
+
+
+
+/* =============
+    Project
+================ */
+
+/* キーワード検索 */
+.p-search__keyword {
+    background-color: #e2dfff;
+    position: relative;
+    width: 100%;
+    padding: 30px 0;
+}
+
+input[type="text"] {
+    height: 40px;
+    width: 60%;
+    margin: 0 20%;
+}
+
+/* ラジオボタン */
+
+/* エリア検索 */
+.p-label__search--area {
+    display: inline-block;
+    padding: 5px 5px;
+    border: 1px solid #2d294f;
+    border-radius: 10px;
+    line-height: normal;
+    font-size: 1rem;
+    background-color: #ffffff;
+}
+
+@media screen and (min-width: 1025px) {
+    .p-label__search--area {
+        padding: 5px 15px;
+        border-radius: 15px;
+        font-size: 1.6rem;
+}
+}
+
+/* 内容で検索 */
+.p-label__search--content {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #2d294f;
+    border-radius: 10px;
+    line-height: normal;
+    font-size: 1rem;
+    background-color:#ffffff;
+}
+@media screen and (min-width: 1025px) {
+    .p-label__search--content {
+        padding: 5px 15px;
+        border-radius: 15px;
+        font-size: 1.6rem;
+}
+}
+
+/* =============
+    Compornent
+================ */
+
+/* 検索タイトル */
+.c-title__searchForm {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1025px) {
+.c-title__searchForm {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+}
+
+/* 検索フォーム閉じるボタン */
+
+.c-button__searchForm--close {
+    position: absolute;
+    right: 15px;
+    top: 85px;
+    z-index: 1000;
+}
+
+/* サーチアイコン */
+.c-icon__submit {
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+    right: 20%;
+    display: inline-block;
+    border: 0px;
+    height: 25px;
+    width: 25px;
+    background: url(../images/btn_searchForm_submit.png);
+    background-size: cover;
+    margin-right: 10px;
+}
+
+/* 送信ボタン */
+.c-label_submit {
+    display: inline-block;
+    padding: 5px 15px;
+    color: white;
+    background-color: #2d294f;
+    line-height: normal;
+    font-size: 16px;
+}
+
 /* -------------------------------- */
 
 
@@ -509,6 +676,25 @@ a.c-header__navListDetail {
     background-color: #8981ca;
 }
 
+.u-searchLabel__change {
+    background-color: #8981ca;
+}
+
+/* margin */
+.u-mb40 {
+    margin-bottom: 40px;
+}
+
+
+.u-searchLabel--ml15 {
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 1025px) {
+.u-searchLabel--ml15 {
+    margin-left: 15px;
+}
+}
 
 /* center */
 .u-center {

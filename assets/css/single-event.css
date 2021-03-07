@@ -312,7 +312,7 @@ a.c-btnTag:hover svg {
 }
 @media (min-width:768px) {
     .c-singleTable__th,
-    .c-singleTable__td{
+    .c-singleTable__td {
         padding: 21px;
         font-size: 1.8rem;
     }
@@ -337,6 +337,11 @@ a.c-btnTag:hover svg {
 
 .c-singleTable__td {
     background: #ffffff;
+}
+@media (min-width:768px) {
+    .c-singleTable__td {
+        font-size: 1.8rem;
+    }
 }
 @media (min-width:1025px) {
     .c-singleTable__td {

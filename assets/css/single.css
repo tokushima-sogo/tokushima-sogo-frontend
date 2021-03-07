@@ -456,7 +456,11 @@ a.c-btnTag:hover svg {
 
 .c-singleTable__td {
     background: #ffffff;
-    font-size: 1.4rem;
+}
+@media (min-width:768px) {
+    .c-singleTable__td {
+        font-size: 1.8rem;
+    }
 }
 @media (min-width:1025px) {
     .c-singleTable__td {
@@ -529,6 +533,11 @@ a.c-btnTag:hover svg {
 /* =============
     Utility
 ================ */
+
+/* グリッドレイアウト */
+.u-grid{
+    display: grid;
+}
 
 /* いいね！アイコン */
 a.u-btnTag--fav svg {
