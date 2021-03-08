@@ -4,14 +4,14 @@
 // エリアで検索
 $('.p-label__search--area').change(function () {
     $(this).addClass("u-searchRabel__change");
-    $('.p-label__search--area').not($(this)).removeClass("u-searchRabel__change");
+    $('.p-label__search--area').not($(this)).removeClass("u-searchLabel__change");
 });
 
 
 // 内容で検索
 $('.p-label__search--content').change(function () {
     $(this).addClass("u-searchRabel__change");
-    $('.p-label__search--content').not($(this)).removeClass("u-searchRabel__change");
+    $('.p-label__search--content').not($(this)).removeClass("u-searchLabel__change");
 });
 
 
