@@ -88,6 +88,7 @@
 
 /* タグ全体 */
 .p-tag {
+    color:#ffffff;
     justify-content: space-around;
     align-items: center;
 }

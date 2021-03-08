@@ -130,6 +130,7 @@
 /* ボタンたち */
 .p-singleBtns {
     display: inline-block;
+    margin: 0 auto;
     width: 70%;
 }
 @media (min-width:400px) {
@@ -270,6 +271,7 @@ button.p-singleBtn {
 
 /* タグ全体 */
 .p-tag {
+    color:#ffffff;
     justify-content: space-around;
     align-items: center;
 }
