@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>トクシマSo Go！</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/searchResult.css">
+    <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+    <link rel="icon" href="./assets/images/favicon_tokushima_sogo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon_tokushima_sogo.png">
+</head>
+<body>
+    <!-- header -->
+    <header class="l-header">
+        <!-- header__contents -->
+        <div class="p-header__contents u-flex u-bgCalmBlue">
+            <!-- logo -->
+            <h1><a href="test.html"><img class="c-logo" src="assets/images/logo_header.png" alt="トクシマSo Go！"></a></h1>
+            <!-- /logo -->
+            <!-- topNav -->
+            <nav class="p-topNav">
+                <ul class="p-header__nav u-flex">
+                    <li>
+                        <div class="p-header__navList u-center"><img class="c-elevatorBtn" src="assets/images/btn_header_ev01.png" alt="1階">
+                            <p class="c-header__nav u-bold u-white">ご案内</p>
+                        </div>
+                        <ul class="p-header__navListDetail u-1f u-center">
+                            <li><a class="c-header__navListDetail" href="#">徳島県の名物
+                                </a></li>
+                            <li><a class="c-header__navListDetail" href="#">徳島県のイベント</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="p-header__navList u-center"><img class="c-elevatorBtn" src="assets/images/btn_header_ev02.png" alt="2階">
+                            <p class="c-header__nav u-white">県南部</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-header__navList u-center"><img class="c-elevatorBtn" src="assets/images/btn_header_ev03.png" alt="3階">
+                            <p class="c-header__nav u-white">徳島市</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="west.html" class="p-header__navList u-center"><img class="c-elevatorBtn" src="assets/images/btn_header_ev04.png" alt="4階">
+                            <p class="c-header__nav u-white">県西部</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-header__navList u-center"><img class="c-elevatorBtn" src="assets/images/btn_header_ev05.png" alt="5階">
+                            <p class="c-header__nav u-white">県東部</p>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="p-header__navList u-center"><img class="c-elevatorBtn" src="assets/images/btn_header_ev06.png" alt="6階">
+                            <p class="c-header__nav u-bold u-white">特設会場</p>
+                        </div>
+                        <ul class="p-header__navListDetail u-6f u-center">
+                            <li><a class="c-header__navListDetail" href="#">クイズ
+                                </a></li>
+                            <li><a class="c-header__navListDetail" href="archiveSpecial.html">特集
+                                </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /topNav -->
+            <!-- header__contentsList -->
+            <ul class="p-header__contentsList u-flex u-center u-white">
+                <li><a href="#"><img class="c-headerIcon" src="assets/images/btn_header_searchOpen.png" alt="検索アイコン">
+                        <p class="u-white u-center">検索</p>
+                    </a></li>
+                <li><a href="mymap.html"><img class="c-headerIcon" src="assets/images/btn_header_map.png" alt="マップアイコン">
+                        <p class="u-white u-center">MYマップ</p>
+                    </a></li>
+                <li><img src="assets/images/btn_header_burgerOpen.png" class="c-burgerBtn u-open" alt="開くボタン"></li>
+            </ul>
+            <!-- /header__contentsList -->
+            <!-- header__contentsBurger -->
+            <div class="p-header__contentsBurger">
+                <!-- header__contentsBurgerTop -->
+                <div class="p-header__contentsBurgerTop u-bgCalmBlue">
+                    <img src="assets/images/btn_header_burgerClose.png" class="c-burgerBtn u-close" alt="閉じるボタン">
+                </div>
+                <!-- /header__contentsBurgerTop -->
+                <!-- header__contentsBurgerNav -->
+                <nav class="p-header__contentsBurgerNav u-center">
+                    <ul>
+                        <li>
+                            <a class="c-header__contentsBurgerNavBtn" href=" #"><img class="c-elevatorBtn" src="assets/images/btn_header_ev06.png" alt="6階"><span class="u-bold u-calmBlue">特設会場</span></a>
+                            <ul class="p-BurgerNavDetail">
+                                <li><a href="#">クイズ</a></li>
+                                <li><a href="#">特集</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="c-header__contentsBurgerNavBtn"><img class="c-elevatorBtn" src="assets/images/btn_header_ev05.png" alt="5階"><span class="u-bold u-calmBlue">県東部</span></a>
+                        </li>
+                        <li><a href="west.html" class="c-header__contentsBurgerNavBtn"><img class="c-elevatorBtn" src="assets/images/btn_header_ev04.png" alt="4階"><span class="u-bold u-calmBlue">県西部</span></a>
+                        </li>
+                        <li><a href="#" class="c-header__contentsBurgerNavBtn"><img class="c-elevatorBtn" src="assets/images/btn_header_ev03.png" alt="3階"><span class="u-bold u-calmBlue">徳島市</span></a>
+                        </li>
+                        <li><a href="#" class="c-header__contentsBurgerNavBtn"><img class="c-elevatorBtn" src="assets/images/btn_header_ev02.png" alt="2階"><span class="u-bold u-calmBlue">県南部</span></a>
+                        </li>
+                        <li><a class="c-header__contentsBurgerNavBtn" href="#"><img class="c-elevatorBtn" src="assets/images/btn_header_ev01.png" alt="1階"><span class="u-bold u-calmBlue">ご案内</span></a>
+                            <ul class="p-BurgerNavDetail">
+                                <li><a href="#">徳島の名物</a></li>
+                                <li><a href="#">徳島県のイベント</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /header__contentsBurgerNav -->
+            </div>
+            <!-- /header__contentsBurger -->
+        </div>
+        <!-- /header__contents -->
+        <!-- searchArea -->
+        <section class="l-searchArea">
+            <img src="./assets/images/btn_searchForm_close.png" alt="" srcset="" width="25px" height="25px" class="c-button__searchForm--close">
+            <form action="" method="post" class="searchandfilter">
+                <div>
+                    <ul>
+
+                        <li class="p-search__keyword u-mb40"><input type="text" name="ofsearch" placeholder="　Search &hellip;" value="">
+                            <div class="c-icon__submit"></div>
+                        </li>
+
+                        <li class="u-mb40">
+                            <h4 class="c-title__searchForm u-center u-mb10">エリアで探す</h4>
+                            <ul class="l-radio__area group">
+                                <li class="cat-item cat-item-5"><label class="p-label__search--area"><input type='radio' name='ofarea[]' value='5' /> 南部
+                                        (4)</label>
+                                </li>
+                                <li class="cat-item cat-item-4 u-search"><label class="p-label__search--area "><input type='radio' name='ofarea[]' value='4' /> 徳島市内
+                                        (4)</label>
+                                </li>
+                                <li class="cat-item cat-item-2 u-search"><label class="p-label__search--area "><input type='radio' name='ofarea[]' value='2' /> 東部
+                                        (5)</label>
+                                </li>
+                                <li class="cat-item cat-item-3 u-search"><label class="p-label__search--area "><input type='radio' name='ofarea[]' value='3' /> 西部
+                                        (4)</label>
+                                </li>
+                            </ul><input type="hidden" name="ofarea_operator" value="and" />
+                        </li>
+
+                        <li class="u-mb40">
+                            <h4 class="c-title__searchForm u-center u-mb10">内容で探す</h4>
+                            <ul class="l-radio__content">
+                                <li class="cat-item"><label class="p-label__search--content "><input class="postform" type="radio" name="ofpost_types[]" value="spot">
+                                        スポット</label></li>
+                                <li class="cat-item u-search"><label class="p-label__search--content"><input class="postform" type="radio" name="ofpost_types[]" value="gourmet"> グルメ</label></li>
+                                <li class="cat-item u-search"><label class="p-label__search--content"><input class="postform" type="radio" name="ofpost_types[]" value="souvenir"> ショップ</label></li>
+                            </ul>
+                        </li>
+                        <li class="l-submit__radio"><input type="hidden" name="ofsubmitted" value="1">
+                            <label class="c-label_submit"><input type="submit" value="検索">この条件で検索</label>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </section>
+        <!-- /searchArea -->
+    </header>
+    <!-- /header -->
+    <main class="l-main">
+        <!-- description -->
+        <section class="l-description">
+            <div class="p-description">
+                <h2 class="c-subHeading u-center">
+                                            <img src="./assets/images/tl_taxonomy_seachResult.png" alt="検索結果"></h2>
+                <div class="p-description__item">
+                    <h3 class="c-description__text u-center u-white">
+                <!-- 検索の選択によって内容が変わる文字列 -->
+                「県西部」「グルメ」の条件を満たす記事</h3>
+                </div>
+            </div>
+        </section>
+        <!-- /description -->
+        <!-- 以下結果表示 -->
+        <!-- articleList -->
+        <section class="l-articleList">
+            <!-- articleList -->
+            <div class="p-articleList u-grid">
+                <!-- article -->
+                <article class="p-article">
+                    <!-- imgArea -->
+                    <div class="p-imgArea">
+                        <img src="assets/images/flame_archive_common_thumbFlame.png" class="c-frame" alt="額縁">
+                        <!-- thumbnail -->
+                        <a href="single.html">
+                            <img src="assets/images/takenoko1.jpg" class="c-thumbnail" alt="スポット写真">
+                        </a>
+                    </div>
+                    <!-- /imgArea -->
+                    <!-- textArea -->
+                    <div class="p-textArea">
+                        <div class="p-textContent u-flex">
+                            <div class="p-bookmark u-flex">
+                                <img src="assets/images/icon_archive_common_icon_heart02.png" class="c-icon__heart">
+                                <div class="c-bookmark__text"><span class="c-bookmark__count">10</span>いいね！</div>
+                            </div>
+                            <div class="p-tag u-flex">
+                                <div class="c-tag u-west u-mr15">県西部</div>
+                                <div class="c-tag">スポット</div>
+                            </div>
+                        </div>
+                        <div class="c-title u-center">たけのこおいしい</div>
+                    </div>
+                    <!-- /textArea -->
+                </article>
+                <!-- /article -->
+                <!-- article -->
+                <article class="p-article">
+                    <!-- imgArea -->
+                    <div class="p-imgArea">
+                        <img src="assets/images/flame_archive_common_thumbFlame.png" class="c-frame" alt="額縁">
+                        <!-- thumbnail -->
+                        <a href="single.html">
+                            <img src="assets/images/takenoko1.jpg" class="c-thumbnail" alt="スポット写真">
+                        </a>
+                    </div>
+                    <!-- /imgArea -->
+                    <!-- textArea -->
+                    <div class="p-textArea">
+                        <div class="p-textContent u-flex">
+                            <div class="p-bookmark u-flex">
+                                <img src="assets/images/icon_archive_common_icon_heart02.png" class="c-icon__heart">
+                                <div class="c-bookmark__text"><span class="c-bookmark__count">10</span>いいね！</div>
+                            </div>
+                            <div class="p-tag u-flex">
+                                <div class="c-tag u-west u-mr15">県西部</div>
+                                <div class="c-tag">スポット</div>
+                            </div>
+                        </div>
+                        <div class="c-title u-center">たけのこおいしい</div>
+                    </div>
+                    <!-- /textArea -->
+                </article>
+                <!-- /article -->
+                <!-- article -->
+                <article class="p-article">
+                    <!-- imgArea -->
+                    <div class="p-imgArea">
+                        <img src="assets/images/flame_archive_common_thumbFlame.png" class="c-frame" alt="額縁">
+                        <!-- thumbnail -->
+                        <a href="single.html">
+                            <img src="assets/images/takenoko1.jpg" class="c-thumbnail" alt="スポット写真">
+                        </a>
+                    </div>
+                    <!-- /imgArea -->
+                    <!-- textArea -->
+                    <div class="p-textArea">
+                        <div class="p-textContent u-flex">
+                            <div class="p-bookmark u-flex">
+                                <img src="assets/images/icon_archive_common_icon_heart02.png" class="c-icon__heart">
+                                <div class="c-bookmark__text"><span class="c-bookmark__count">10</span>いいね！</div>
+                            </div>
+                            <div class="p-tag u-flex">
+                                <div class="c-tag u-west u-mr15">県西部</div>
+                                <div class="c-tag">スポット</div>
+                            </div>
+                        </div>
+                        <div class="c-title u-center">たけのこおいしい</div>
+                    </div>
+                    <!-- /textArea -->
+                </article>
+                <!-- /article -->
+            </div>
+            <!-- /articleList -->
+        </section>
+        <!-- /articleList -->
+        <!-- 結果表示されるのここまで -->
+    </main>
+    <!-- /main -->
+    <!-- footer -->
+    <footer class="l-footer u-center u-white u-bgCalmBlue">
+        <!-- footer__inner -->
+        <div class="p-footer__inner u-flex">
+            <!-- footer__contentsBlock -->
+            <ul class="p-footer__contentsBlock u-flex u-cr u-o3">
+                <!-- 6階 -->
+                <li class="p-footer__contentsParts">
+                    <div class="c-footer__contentsPartsBtn ">6階<span>特設会場</span></div>
+                    <ul class="c-footer__contentsDetail u-center">
+                        <li><a class="u-white" href="#">トップ</a></li>
+                        <li><a class="u-white" href="#">スポット</a></li>
+                        <li><a class="u-white" href="#">グルメ</a></li>
+                        <li><a class="u-white" href="#">ショップ</a></li>
+                    </ul>
+                </li>
+                <!-- /6階 -->
+                <!-- 5階 -->
+                <li class="p-footer__contentsParts u-white">
+                    <div class="c-footer__contentsPartsBtn">5階<span>県東部</span></div>
+                    <ul class="c-footer__contentsDetail u-center">
+                        <li><a href="#">トップ</a></li>
+                        <li><a href="#">スポット</a></li>
+                        <li><a href="#">グルメ</a></li>
+                        <li><a href="#">ショップ</a></li>
+                    </ul>
+                </li>
+                <!-- /5階 -->
+            </ul>
+            <!-- /footer__contentsBlock -->
+            <!-- footer__contentsBlock -->
+            <ul class="p-footer__contentsBlock u-flex u-cr u-o2">
+                <!-- 4階 -->
+                <li class="p-footer__contentsParts">
+                    <div class="c-footer__contentsPartsBtn">4階<span>県西部</span></div>
+                    <ul class="c-footer__contentsDetail u-center">
+                        <li><a href="#">トップ</a></li>
+                        <li><a href="#">スポット</a></li>
+                        <li><a href="#">グルメ</a></li>
+                        <li><a href="#">ショップ</a></li>
+                    </ul>
+                </li>
+                <!-- /4階 -->
+                <!-- 3階 -->
+                <li class="p-footer__contentsParts">
+                    <div class="c-footer__contentsPartsBtn">3階<span>徳島市</span></div>
+                    <ul class="c-footer__contentsDetail u-center">
+                        <li><a href="#">トップ</a></li>
+                        <li><a href="#">スポット</a></li>
+                        <li><a href="#">グルメ</a></li>
+                        <li><a href="#">ショップ</a></li>
+                    </ul>
+                </li>
+                <!-- /3階 -->
+            </ul>
+            <!-- /footer__contentsBlock -->
+            <!-- footer__contentsBlock -->
+            <ul class="p-footer__contentsBlock u-flex u-cr u-o1">
+                <!-- 2階 -->
+                <li class="p-footer__contentsParts">
+                    <div class="c-footer__contentsPartsBtn">2階<span>県南部</span></div>
+                    <ul class="c-footer__contentsDetail u-center">
+                        <li><a href="#">トップ</a></li>
+                        <li><a href="#">スポット</a></li>
+                        <li><a href="#">グルメ</a></li>
+                        <li><a href="#">ショップ</a></li>
+                    </ul>
+                </li>
+                <!-- /2階 -->
+                <!-- 1階 -->
+                <li class="p-footer__contentsParts">
+                    <div class="c-footer__contentsPartsBtn">1階<span>ご案内</span></div>
+                    <ul class="c-footer__contentsDetail u-center u-1f">
+                        <li><a href="#">徳島の名物</a></li>
+                        <li><a href="#">徳島県のイベント</a></li>
+                    </ul>
+                </li>
+                <!-- /1階 -->
+            </ul>
+            <!-- /footer__contentsBlock -->
+            <!-- footer__contentsBlock -->
+            <ul class="p-footer__contentsBlock u-flex u-o4">
+                <li>
+                    <!-- このサイトについてなど -->
+                    <ul class="p-footer__contentsParts p-footer__contentsPartsLast u-center">
+                        <li><a href="about-site.html">このサイトについて</a></li>
+                        <li><a href="privacy.html">プライバシーポリシー</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                        <li><a href="#">サイトの使い方</a></li>
+                        <li><a href="about-tokushima.html">徳島県について</a></li>
+                    </ul>
+                    <!-- /このサイトについてなど -->
+                </li>
+                <li>
+                    <!-- p-fab -->
+                    <ul class="p-fab u-flex">
+                        <li class="c-fab"><a href="#" class="u-white"><i class="fab fa-instagram-square fa-3x"></i></a></li>
+                        <li class="c-fab"><a href="#" class="u-white"><i class="fab fa-twitter-square fa-3x"></i></a></li>
+                    </ul>
+                    <!-- /p-fab -->
+                </li>
+            </ul>
+            <!-- /footer__contentsBlock -->
+        </div>
+        <!-- /footer__inner -->
+        <!-- copyRight -->
+        <p class="c-copyRight">
+                Copyright©トクシマSo Go！All Rights Reserved.
+            </p>
+        <!-- /copyRight -->
+    </footer>
+    <!-- /footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/searchForm.js"></script>
+</body>
+</html>
