@@ -4,6 +4,11 @@
     Layout
 ================ */
 
+.l-description {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .l-specialArticle {
     width: 100%;
     padding: 30px 0;

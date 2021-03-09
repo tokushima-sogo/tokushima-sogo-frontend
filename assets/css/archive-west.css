@@ -21,7 +21,9 @@
 
 /* エリア名と説明全体 */
 .p-description {
-        padding: 20px 0;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
     }
     @media(min-width:768px) {
     .p-description {
@@ -101,7 +103,8 @@
 
 /* メインビジュアル */
 .c-heroImg {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
 }
 
 /* エリア名 */
